@@ -1,0 +1,131 @@
+[INFO] Sprawozdanie - Zadanie 9.
+
+[INFO] Analizowaną funkcją jest funkcja **Tangens (Tan)**.
+
+[INFO] Funkcja tangens jest funkcją trygonometryczną, która jest zdefiniowana jako stosunek długości przeciwprostokątnej
+       do przyprostokątnej w trójkącie prostokątnym. Jest to funkcja okresowa, która ma nieskończenie wiele miejsc zerowych
+       i nieskończenie wiele punktów osobliwości. Funkcja posiada asymptoty dla K całkowitych w punktach pi/2 + k*pi.
+       Wartości z lewej strony dążą do nieskończoności, a z prawej do minus nieskończoności.
+
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[DANE] Search for an interval around 6 containing a sign change:
+[DANE] Func-count    a          f(a)             b          f(b)        Procedure
+[DANE]     1               6     -0.291006             6     -0.291006   initial interval
+[DANE]     3         5.83029     -0.486626       6.16971     -0.113969   search
+[DANE]     5            5.76     -0.576799          6.24    -0.0432122   search
+[DANE]     7         5.66059     -0.717836       6.33941     0.0562853   search
+[DANE] Search for a zero in the interval [5.66059, 6.33941]:
+[DANE]  Func-count    x          f(x)             Procedure
+[DANE]     7         6.33941     0.0562853        initial
+[DANE]     8         6.29006    0.00686984        interpolation
+[DANE]     9         6.28326   7.31689e-05        interpolation
+[DANE]    10         6.28319   9.31674e-08        interpolation
+[DANE]    11         6.28319   1.26008e-12        interpolation
+[DANE]    12         6.28319  -2.44929e-16        interpolation
+[DANE]    13         6.28319  -2.44929e-16        interpolation
+[DANE] Zero found in the interval [5.66059, 6.33941]
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= 
+[INFO] Funkcja fzero precyzyjnie zlokalizowała miejsce zerowe funkcji tangens blisko 2π. Rozpoczynając od punktu x=6,
+       algorytm iteracyjnie poszerzał zakres, dopóki wartości funkcji na krańcach przedziału nie miały przeciwnych znaków.
+       Następnie, korzystając z odwrotnej interpolacji kwadratowej, dokładnie przybliżył to miejsce zerowe, dopóki wartość
+       funkcji f(x) się nie zmieniła. Znaleziony przedział [5.66059, 6.33941] zawiera to rozwiązanie. Procedura fzero 
+       wykazała się wysoką skutecznością w odnajdywaniu miejsc zerowych funkcji trygonometrycznych.
+
+[INFO] Wniosek:      
+       - Procedura fzero efektywnie znalazła miejsce zerowe funkcji tangens blisko 2π.
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[DANE] Search for an interval around 4.5 containing a sign change:
+[DANE]  Func-count    a          f(a)             b          f(b)        Procedure
+[DANE]     1             4.5       4.63733           4.5       4.63733   initial interval
+[DANE]     3         4.37272       2.82995       4.62728       11.7212   search
+[DANE]     5            4.32       2.41633          4.68       30.8639   search
+[DANE]     7         4.24544       1.98361       4.75456      -23.6998   search
+ 
+[DANE] Search for a zero in the interval [4.24544, 4.75456]:
+[DANE]  Func-count    x          f(x)             Procedure
+[DANE]     7         4.24544       1.98361        initial
+[DANE]     8         4.28476       2.19418        interpolation
+[DANE]     9         4.51966       5.12424        bisection
+[DANE]    10         4.63711       13.2587        bisection
+[DANE]    11         4.75456      -23.6998        bisection
+[DANE]    12         4.73801      -39.0229        interpolation
+[DANE]    13         4.69583        60.399        bisection
+[DANE]    14         4.70037       83.1719        interpolation
+[DANE]    15         4.71692       -220.62        bisection
+[DANE]    16         4.70864       267.019        interpolation
+[DANE]    17         4.70943       338.132        interpolation
+[DANE]    18          4.7113       921.746        bisection
+[DANE]    19         4.71318      -1269.65        bisection
+[DANE]    20         4.71303      -1564.99        interpolation
+[DANE]    21         4.71263      -4078.77        bisection
+[DANE]    22         4.71224       6727.73        bisection
+[DANE]    23         4.71229       9962.96        interpolation
+[DANE]    24         4.71244      -20718.2        bisection
+[DANE]    25         4.71236       38383.9        interpolation
+[DANE]    26         4.71241      -45016.5        interpolation
+[DANE]    27         4.71241      -54419.9        interpolation
+[DANE]    28          4.7124       -137579        bisection
+[DANE]    29         4.71239        260520        bisection
+[DANE]    30         4.71239        470937        interpolation
+[DANE]    31         4.71239       -583074        bisection
+[DANE]    32         4.71239       -661876        interpolation
+[DANE]    33         4.71239  -1.53061e+06        bisection
+[DANE]    34         4.71239  -4.45291e+06        bisection
+[DANE]    35         4.71239    4.8974e+06        bisection
+[DANE]    36         4.71239   5.15468e+06        interpolation
+[DANE]    37         4.71239    1.0881e+07        bisection
+[DANE]    38         4.71239    2.4476e+07        bisection
+[DANE]    39         4.71239   6.52207e+07        bisection
+[DANE]    40         4.71239  -9.81241e+07        bisection
+[DANE]    41         4.71239  -1.31225e+08        interpolation
+[DANE]    42         4.71239   3.89001e+08        bisection
+[DANE]    43         4.71239  -3.96054e+08        interpolation
+[DANE]    44         4.71239  -4.03368e+08        interpolation
+[DANE]    45         4.71239  -8.21912e+08        bisection
+[DANE]    46         4.71239  -1.70809e+09        bisection
+[DANE]    47         4.71239  -3.70597e+09        bisection
+[DANE]    48         4.71239  -8.92638e+09        bisection
+[DANE]    49         4.71239   2.18442e+10        bisection
+[DANE]    50         4.71239  -3.01892e+10        interpolation
+[DANE]    51         4.71239  -4.88507e+10        interpolation
+[DANE]    52         4.71239    7.9026e+10        bisection
+[DANE]    53         4.71239   1.14337e+11        interpolation
+[DANE]    54         4.71239  -2.55898e+11        bisection
+[DANE]    55         4.71239   4.13295e+11        interpolation
+[DANE]    56         4.71239  -6.71861e+11        interpolation
+[DANE]    57         4.71239   1.07412e+12        interpolation
+[DANE]    58         4.71239  -1.79342e+12        interpolation
+[DANE]    59         4.71239   2.67939e+12        interpolation
+[DANE]    60         4.71239   5.30567e+12        interpolation
+[DANE]    61         4.71239  -5.41837e+12        bisection
+[DANE]    62         4.71239  -5.47103e+12        interpolation
+[DANE]    63         4.71239  -1.10607e+13        bisection
+[DANE]    64         4.71239  -2.26115e+13        bisection
+[DANE]    65         4.71239  -4.73203e+13        bisection
+[DANE]    66         4.71239  -1.04316e+14        bisection
+[DANE]    67         4.71239  -2.96823e+14        bisection
+[DANE]    68         4.71239    5.1019e+14        bisection
+
+[DANE] Current point x may be near a singular point. The interval [4.24544, 4.75456] 
+[DANE] reduced to the requested tolerance and the function changes sign in the interval,
+[DANE] but f(x) increased in magnitude as the interval reduced.
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[INFO] Rozpoczynając od punktu x=4.5, procedura iteracyjnie poszerzała zakres, dopóki wartości funkcji na krańcach przedziału
+       nie wykazywały przeciwstawnych znaków. Następnie, wykorzystując odwrotną interpolację kwadratową, dokładnie przybliżała
+       miejsce zerowe funkcji, szukając punktu, w którym wartość funkcji f(x) nie zmieniała się. Jednak znaleziony przedział
+       [4.24544, 4.75456] nie zawierał tego rozwiązania. Funkcja fzero informuje nas, że w okolicy tego punktu może znajdować
+       się miejsce zerowe, jednak nie zostało ono dokładnie zlokalizowane. Procedura fzero nie wykazała się taką samą 
+       skutecznością jak w poprzednim przypadku w odnajdywaniu miejsc zerowych funkcji trygonometrycznych.
+
+[INFO] Wnioski:
+       - Procedura fzero napotkała trudności w lokalizacji miejsc zerowych funkcji tangens ze względu na obecność asymptoty 
+         w punkcie 3π/2, co prowadziło do oscylacji wartości funkcji wokół asymptoty. Komunikat z Matlab sugeruje, że funkcja
+         f(x) zwiększała się wraz ze zbliżaniem się do punktu, co potwierdza możliwość obecności punktu osobliwego. Po 68 
+         iteracjach procedura zakończyła działanie, sugerując bliskość punktu x do punktu osobliwego, co wskazuje na trudności
+         wynikające z odległości punktu startowego od najbliższego miejsca zerowego funkcji tangens.
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
+[INFO] Wnioski ogólne:
+       - Funkcja fzero stosuje algorytmy bisekcji i interpolacji kwadratowej w celu efektywnego znajdowania miejsc zerowych.
+       - Funkcja fzero zwróci błędny wynik, gdy badana funkcja jest rozbieżna w danym punkcie. 
+       - Wybór odpowiedniego punktu startowego ma istotne znaczenie dla stabilności numerycznej procesu znajdowania miejsc zerowych.
+       - Dobry punkt startowy przyspiesza odnalezienie zera i zwiększa stabilność numeryczną procedury.

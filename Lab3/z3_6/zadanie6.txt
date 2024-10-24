@@ -1,0 +1,27 @@
+Direct method residual error standard: 0.000000000001
+Time taken by Direct method: 0.143164 seconds
+
+Jacobi method residual error standard: NaN
+Iteration at which error occurred (Jacobi): 619
+Time taken by Jacobi method: 0.370977 seconds
+
+Gauss-Seider method residual error standard: 64367347963.390945434570
+Iteration at which error occurred (Gauss-Seidel): 1000
+Time taken by Gauss-Seidel method: 45.074418 seconds
+
+1. Jaka jest norma błędu residualnego dla każdego sposobu rozwiązania równania macierzowego?
+
+2. Czy metody iteracyjne zbiegają się? 
+    Metody iteracyjne (Jacobi i Gaussa-Seidela) nie zbiegają się do rozwiązania. Metoda Jacobiego osiągała iterację 619 
+    przed zakończeniem obliczeń, natomiast metoda Gaussa-Seidela osiągnęła limit iteracji (1000) bez osiągnięcia dobrego
+    rozwiązania. Skoro metoda Jacobi nie posiada zdefiniowanego błędu residualnego to musi oznaczać, że dąży ona do nieskończoności.
+
+Wnioski:
+    Obie metody iteracyjne mają większy czas wykonania w porównaniu z metodą bezpośrednią. 
+
+    Metoda Gaussa-Seidela wymaga najwięcej czasu na wykonanie, co może wynikać z faktu, że każda iteracja zależy od poprzednich
+    iteracji.
+
+    Zastosowanie metod iteracyjnych nie jest efektywne ze względu na brak zbieżności. 
+    
+    Metoda bezpośrednia daje najdokładniejsze rozwiązanie.
